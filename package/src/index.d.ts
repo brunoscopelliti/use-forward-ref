@@ -1,8 +1,5 @@
-type HookState = {
-  count : number;
-  increment : () => void;
-};
+import React from "react";
 
-declare const useCounter : () => HookState;
+declare const useForwardRef : <T>(maybeRef ?: React.RefObject<T>) => React.RefObject<T>;
 
-export default useCounter;
+export default useForwardRef;

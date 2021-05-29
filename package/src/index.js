@@ -1,12 +1,16 @@
-import { useState, useCallback } from "react";
+import { useRef } from "react";
 
-const useCounter =
-  () => {
-    const [count, setCount] = useState(0);
+/**
+ * React hook that permits to use the forwarded ref,
+ * or a fallback when it's not provided.
+ * @name useForwardRef
+ * @template T
+ * @param {React.RefObject<T>|undefined} refOrUndefined
+ * @returns {React.RefObject<T>}
+ */
+const useForwardRef = (refOrUndefined) => {
+  const ref = useRef();
 
-    const increment = useCallback(() => setCount((x) => x + 1), []);
-
-    return { count, increment };
-  };
-
-export default useCounter;
+  return refOrUndefined || ref;
+};
+export default useForwardRef;
