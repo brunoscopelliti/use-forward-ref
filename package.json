@@ -1,0 +1,69 @@
+{
+  "name": "template-react-hook",
+  "version": "1.0.0",
+  "description": "A template to create a new React custom hook.",
+  "main": "package/dist/index.js",
+  "module": "package/dist/index.es.js",
+  "types": "package/src/index.d.ts",
+  "scripts": {
+    "badge:coverage": "npm run test:coverage && codecov",
+    "prebuild": "rm -rf ./package/dist",
+    "build": "rollup -c rollup.config.js",
+    "lint": "eslint 'package/**'",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "release": "standard-version",
+    "test": "npm run lint && npm run test:types && npm run test:unit",
+    "test:debug": "node --inspect $(npm bin)/jest --watch --no-cache --runInBand",
+    "test:types": "tsc --noEmit -p package/src",
+    "test:unit": "jest --runInBand --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoscopelliti/template-react-hook.git"
+  },
+  "directories": {
+    "src": "package/src"
+  },
+  "files": [
+    "package/dist",
+    "package/src/index.d.ts",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [],
+  "author": "Bruno Scopelliti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoscopelliti/template-react-hook/issues"
+  },
+  "homepage": "https://github.com/brunoscopelliti/template-react-hook#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.4",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@testing-library/react-hooks": "^7.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.8",
+    "babel-jest": "^27.0.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "codecov": "^3.8.2",
+    "eslint": "^7.27.0",
+    "eslint-config-bruno": "^3.0.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^4.6.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.1",
+    "rollup": "^2.50.4",
+    "standard-version": "^9.3.0",
+    "typescript": "^4.3.2"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  }
+}

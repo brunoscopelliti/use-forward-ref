@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "bruno",
+    "plugin:jest/all",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": [
+    "jest",
+    "react-hooks",
+    "testing-library"
+  ],
+  "rules": {
+    "jest/prefer-expect-assertions": 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.js"],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ]
+}
