@@ -1,24 +1,41 @@
-# template-react-hook
+# react-forward-ref
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brunoscopelliti/template-react-hook/blob/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/@bscop/template-react-hook.svg?style=flat)](https://www.npmjs.com/package/@bscop/template-react-hook)
-[![CircleCI Status](https://circleci.com/gh/brunoscopelliti/template-react-hook.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/brunoscopelliti/template-react-hook)
-[![Coverage](https://img.shields.io/codecov/c/github/brunoscopelliti/template-react-hook)](https://app.codecov.io/gh/brunoscopelliti/template-react-hook/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brunoscopelliti/react-forward-ref/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@bscop/react-forward-ref.svg?style=flat)](https://www.npmjs.com/package/@bscop/react-forward-ref)
+[![CircleCI Status](https://circleci.com/gh/brunoscopelliti/react-forward-ref.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/brunoscopelliti/react-forward-ref)
+[![Coverage](https://img.shields.io/codecov/c/github/brunoscopelliti/react-forward-ref)](https://app.codecov.io/gh/brunoscopelliti/react-forward-ref/)
 
-A template to create a new React custom hook.
+React hook that permits to use the forwarded ref, or a fallback when it's not provided.
 
 ## Install
 
 ```
-npm i @bscop/template-react-hook
+npm i @bscop/react-forward-ref
 ```
 
 ## Usage
 
 ```js
-import useHook from "@bscop/template-react-hook";
+import React, { useRef } from "react";
+import useForwardRef from "@bscop/react-forward-ref";
 
-useHook();
+const Demo = React.forwardRef(
+  (props, maybeRef) => {
+    /**
+     * maybeRef can be a ref, or nothing
+     * depending by how the component is used.
+     * ref is always a ref, equal to maybeRef
+     * only when it is a ref.
+     */
+    const ref = useForwardRef(maybeRef);
+
+    return (
+      <div ref={ref}>
+        Demo!
+      </div>
+    );
+  }
+);
 ```
 
 ## Contribute

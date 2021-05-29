@@ -1,7 +1,7 @@
 {
-  "name": "template-react-hook",
+  "name": "@bscop/react-forward-ref",
   "version": "1.0.0",
-  "description": "A template to create a new React custom hook.",
+  "description": "React hook that permits to use the forwarded ref, or a fallback when it's not provided.",
   "main": "package/dist/index.js",
   "module": "package/dist/index.es.js",
   "types": "package/src/index.d.ts",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brunoscopelliti/template-react-hook.git"
+    "url": "git+https://github.com/brunoscopelliti/react-forward-ref.git"
   },
   "directories": {
     "src": "package/src"
@@ -32,13 +32,21 @@
     "LICENSE",
     "README.md"
   ],
-  "keywords": [],
+  "keywords": [
+    "react",
+    "react hook",
+    "react forwardRef",
+    "conditional ref",
+    "react hook ref",
+    "react useRef",
+    "useForwardRef"
+  ],
   "author": "Bruno Scopelliti",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brunoscopelliti/template-react-hook/issues"
+    "url": "https://github.com/brunoscopelliti/react-forward-ref/issues"
   },
-  "homepage": "https://github.com/brunoscopelliti/template-react-hook#readme",
+  "homepage": "https://github.com/brunoscopelliti/react-forward-ref#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.14.4",
     "@commitlint/cli": "^12.1.4",
