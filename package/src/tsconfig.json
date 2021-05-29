@@ -4,8 +4,10 @@
     "baseUrl": ".",
     "checkJs": true,
     "esModuleInterop": true,
+    "jsx": "react-jsx",
     "lib": [
-      "ESNext"
+      "DOM",
+      "ESNext",
     ],
     "outDir": "package/dist",
     "paths": {

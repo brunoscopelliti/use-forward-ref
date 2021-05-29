@@ -12,6 +12,7 @@
       {
         "useBuiltIns": false
       }
-    ]
+    ],
+    "@babel/preset-react"
   ]
 }
