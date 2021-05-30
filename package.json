@@ -1,6 +1,6 @@
 {
   "name": "@bscop/use-forward-ref",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook that permits to use the forwarded ref, or a fallback when it's not provided.",
   "main": "package/dist/index.js",
   "module": "package/dist/index.es.js",
