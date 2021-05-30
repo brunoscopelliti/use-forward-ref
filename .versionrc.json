@@ -9,6 +9,6 @@
     { "type": "perf", "hidden": true },
     { "type": "test", "hidden": true }
   ],
-  "commitUrlFormat": "https://github.com/brunoscopelliti/react-forward-ref/commits/{{hash}}",
-  "compareUrlFormat": "https://github.com/brunoscopelliti/react-forward-ref/compare/{{previousTag}}...{{currentTag}}"
+  "commitUrlFormat": "https://github.com/brunoscopelliti/use-forward-ref/commits/{{hash}}",
+  "compareUrlFormat": "https://github.com/brunoscopelliti/use-forward-ref/compare/{{previousTag}}...{{currentTag}}"
 }

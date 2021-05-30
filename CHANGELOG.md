@@ -7,4 +7,4 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* draft implementation ([98af76e](https://github.com/brunoscopelliti/react-forward-ref/commits/98af76ebb11320dbfa805ba1a46d5ba2b37237e6))
+* draft implementation ([98af76e](https://github.com/brunoscopelliti/use-forward-ref/commits/98af76ebb11320dbfa805ba1a46d5ba2b37237e6))

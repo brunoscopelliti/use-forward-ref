@@ -1,9 +1,9 @@
-# react-forward-ref
+# use-forward-ref
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brunoscopelliti/react-forward-ref/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brunoscopelliti/use-forward-ref/blob/main/LICENSE)
 [![npm version](https://img.shields.io/npm/v/@bscop/use-forward-ref.svg?style=flat)](https://www.npmjs.com/package/@bscop/use-forward-ref)
-[![CircleCI Status](https://circleci.com/gh/brunoscopelliti/react-forward-ref.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/brunoscopelliti/react-forward-ref)
-[![Coverage](https://img.shields.io/codecov/c/github/brunoscopelliti/react-forward-ref)](https://app.codecov.io/gh/brunoscopelliti/react-forward-ref/)
+[![CircleCI Status](https://circleci.com/gh/brunoscopelliti/use-forward-ref.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/brunoscopelliti/use-forward-ref)
+[![Coverage](https://img.shields.io/codecov/c/github/brunoscopelliti/use-forward-ref)](https://app.codecov.io/gh/brunoscopelliti/use-forward-ref/)
 
 React hook that permits to use the forwarded ref, or a fallback when it's not provided.
 

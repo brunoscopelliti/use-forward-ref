@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brunoscopelliti/react-forward-ref.git"
+    "url": "git+https://github.com/brunoscopelliti/use-forward-ref.git"
   },
   "directories": {
     "src": "package/src"
@@ -44,9 +44,9 @@
   "author": "Bruno Scopelliti",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brunoscopelliti/react-forward-ref/issues"
+    "url": "https://github.com/brunoscopelliti/use-forward-ref/issues"
   },
-  "homepage": "https://github.com/brunoscopelliti/react-forward-ref#readme",
+  "homepage": "https://github.com/brunoscopelliti/use-forward-ref#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-react": "^7.13.13",
