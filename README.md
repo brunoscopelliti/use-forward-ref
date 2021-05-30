@@ -1,7 +1,7 @@
 # react-forward-ref
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/brunoscopelliti/react-forward-ref/blob/main/LICENSE)
-[![npm version](https://img.shields.io/npm/v/@bscop/react-forward-ref.svg?style=flat)](https://www.npmjs.com/package/@bscop/react-forward-ref)
+[![npm version](https://img.shields.io/npm/v/@bscop/use-forward-ref.svg?style=flat)](https://www.npmjs.com/package/@bscop/use-forward-ref)
 [![CircleCI Status](https://circleci.com/gh/brunoscopelliti/react-forward-ref.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/brunoscopelliti/react-forward-ref)
 [![Coverage](https://img.shields.io/codecov/c/github/brunoscopelliti/react-forward-ref)](https://app.codecov.io/gh/brunoscopelliti/react-forward-ref/)
 
@@ -10,14 +10,14 @@ React hook that permits to use the forwarded ref, or a fallback when it's not pr
 ## Install
 
 ```
-npm i @bscop/react-forward-ref
+npm i @bscop/use-forward-ref
 ```
 
 ## Usage
 
 ```js
 import React, { useRef } from "react";
-import useForwardRef from "@bscop/react-forward-ref";
+import useForwardRef from "@bscop/use-forward-ref";
 
 const Demo = React.forwardRef(
   (props, maybeRef) => {
