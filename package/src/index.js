@@ -5,11 +5,11 @@ import { useRef } from "react";
  * or a fallback when it's not provided.
  * @name useForwardRef
  * @template T
- * @param {React.RefObject<T>|undefined} refOrUndefined
- * @returns {React.RefObject<T>}
+ * @param {React.ForwardedRef<T>|undefined} refOrUndefined
+ * @returns {React.ForwardedRef<T>}
  */
 const useForwardRef = (refOrUndefined) => {
-  const ref = useRef();
+  const ref = useRef(null);
 
   return refOrUndefined || ref;
 };
