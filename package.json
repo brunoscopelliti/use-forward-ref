@@ -68,7 +68,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^4.6.0",
     "husky": "^6.0.0",
-    "jest": "^27.0.1",
+    "jest": "^27.0.3",
     "prop-types": "^15.7.2",
     "rollup": "^2.50.5",
     "standard-version": "^9.3.0",
